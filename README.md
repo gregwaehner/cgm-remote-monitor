@@ -1,16 +1,18 @@
-cgm-remote-monitor (a.k.a. NightScout)
+cgm-remote-monitor (a.k.a. Nightscout)
 ======================================
  
 [![Build Status](https://travis-ci.org/nightscout/cgm-remote-monitor.png)](https://travis-ci.org/nightscout/cgm-remote-monitor)
 [![Dependency Status](https://david-dm.org/nightscout/cgm-remote-monitor.png)](https://david-dm.org/nightscout/cgm-remote-monitor)
 [![Gitter chat](https://badges.gitter.im/nightscout.png)](https://gitter.im/nightscout/public)
 
-This acts as a web-based CGM (Continuous Glucose Montinor) to allow
-multiple caregivers to remotely view a patients glucose data in
-realtime.  The server reads a MongoDB which is intended to be data
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+This acts as a web-based CGM (Continuous Glucose Monitor) to allow
+multiple caregivers to remotely view a patient's glucose data in
+real time.  The server reads a MongoDB which is intended to be data
 from a physical CGM, where it sends new SGV (sensor glucose values) as
 the data becomes available.  The data is then displayed graphically
-and blood glucose values are predicted 0.5 hours ahead using a
+and blood glucose values are predicted 0.5 hours ahead using an
 autoregressive second order model.  Alarms are generated for high and
 low values, which can be cleared by any watcher of the data.
 
@@ -91,15 +93,28 @@ More questions?
 
 Feel free to [post an issue][issues], but read the [wiki][wiki] first.
 
-[issues]: https://github.com/rnpenguin/cgm-remote-monitor/issues
-[wiki]: https://github.com/rnpenguin/cgm-remote-monitor/wiki
+[issues]: https://github.com/nightscout/cgm-remote-monitor/issues
+[wiki]: https://github.com/nightscout/cgm-remote-monitor/wiki
 
 License
 ---------------
 
-This is experimental software and NOT intended for treatment of any
-kind. It is provided under the [MIT license][mit], so you can do with
-it whatever you wish except hold me responsible if it does something
-you don't like.
+[agpl-3]: http://www.gnu.org/licenses/agpl-3.0.txt
 
-[mit]: http://www.opensource.org/licenses/mit-license.php
+    cgm-remote-monitor - web app to broadcast cgm readings
+    Copyright (C) 2015 The Nightscout Foundation, http://www.nightscoutfoundation.org.
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published
+    by the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
